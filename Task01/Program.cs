@@ -7,4 +7,16 @@
 // a = -3 b = 9 -> нет
 
 
-writeLine = Console.WriteLine;
+
+Console.WriteLine("Введите 1 число");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите 2 число");
+int number2 = Convert.ToInt32(Console.ReadLine());
+if (number1== number2*number2)
+{
+    Console.WriteLine($"{number2} является квадратом {number1}");
+}
+else
+{
+    Console.WriteLine($"{number2} не является квадратом {number1}");
+}
