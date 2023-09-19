@@ -7,7 +7,9 @@
 
 
 Console.WriteLine("Введите число дня недели");
-int weekDay = Console.ReadLine();
+
+string weekDay = Console.ReadLine();
+
 if (weekDay == "1")
     Console.WriteLine($"{weekDay} -> Понедельник");
 else if (weekDay == "1")
