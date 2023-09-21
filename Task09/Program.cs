@@ -12,11 +12,22 @@ Console.WriteLine($"Случаное число из отрезка [10, 99] -> 
 
 int firstDigit = number / 10;
 int secondDigit = number % 10;
- 
- if(firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}");
- else Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
+
+// if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}");
+// else Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
 
 
 
-int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; //Тернарный оператор
+// int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; //Тернарный оператор
+// Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
+
+
+int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
+
+int MaxDigit(int num)
+{
+    int firstDigit = num / 10;
+    int secondDigit = num % 10;
+    return firstDigit > secondDigit ? firstDigit : secondDigit;
+}
