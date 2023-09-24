@@ -17,7 +17,7 @@ int deleteSecondDigit = DeleteSecondDigit(number);
 
 Console.WriteLine($"{number} -> {deleteSecondDigit}");
 
-int deleteSecondDigit(int num)
+int DeleteSecondDigit(int num)
 {
     int firstDigit = num / 100;
     int lastDigit = num % 10;
