@@ -4,6 +4,19 @@
 // [1 2 3 4 5] -> 5 8 3
 // [6 7 3 6] -> 36 21
 
+// вещественный массив
+// double[] CreateArrayRndDouble(int size, int min, int max)
+// {
+//     int[] arr = new double[size];
+//     Random rnd = new Random();
+//     for (int i = 0; i < size; i++)
+//     {
+//         arr[i] = rnd.NextDouble()* (max-min)+min;
+//     }
+//     return arr;
+// }
+
+
 int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
